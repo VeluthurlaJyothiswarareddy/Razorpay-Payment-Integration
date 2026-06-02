@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: razorpay-integration
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/razorpay_db
+
+razorpay:
+  key-id: ${RAZORPAY_KEY_ID:rzp_test_SwgANOuBns3K1j}
+  key-secret: ${RAZORPAY_KEY_SECRET:67EacdegunfadcJP7r4FlrHN}
+  webhook-secret: ${RAZORPAY_WEBHOOK_SECRET:your_webhook_secret}
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+logging:
+  level:
+    com.razorpay.integration: DEBUG
