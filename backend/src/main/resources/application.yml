@@ -9,8 +9,8 @@ spring:
       uri: mongodb://localhost:27017/razorpay_db
 
 razorpay:
-  key-id: ${RAZORPAY_KEY_ID:rzp_test_SwgANOuBns3K1j}
-  key-secret: ${RAZORPAY_KEY_SECRET:67EacdegunfadcJP7r4FlrHN}
+  key-id: ${RAZORPAY_KEY_ID:rzp_test_SwgANOuBns}
+  key-secret: ${RAZORPAY_KEY_SECRET:67EacdegunfadcJP7r4F}
   webhook-secret: ${RAZORPAY_WEBHOOK_SECRET:your_webhook_secret}
 
 springdoc:
